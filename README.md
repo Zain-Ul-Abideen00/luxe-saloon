@@ -1,73 +1,147 @@
-# Welcome to your Lovable project
+# Luxe Salon - Premium Beauty & Wellness
 
-## Project info
+A modern, elegant website for a premium beauty salon showcasing services, team, gallery, and contact information.
 
-**URL**: https://lovable.dev/projects/f9513078-f164-4014-ad9f-c94d015e502c
+## About
 
-## How can I edit this code?
+Luxe Salon is a luxury beauty and wellness salon website built with modern web technologies. The site features a beautiful, responsive design that highlights the salon's premium services, expert team, and elegant atmosphere.
 
-There are several ways of editing your application.
+## Features
 
-**Use Lovable**
+-   **Hero Section**: Eye-catching landing section with call-to-action buttons
+-   **Services**: Showcase of beauty services including:
+    -   Hair Styling
+    -   Hair Coloring
+    -   Spa Treatments
+    -   Nail Services
+-   **Gallery**: Visual showcase of salon work and atmosphere
+-   **Team**: Introduction to expert stylists and staff
+-   **Testimonials**: Client reviews and feedback
+-   **Contact Form**: Easy appointment booking and inquiry system
+-   **Responsive Design**: Fully responsive layout for all devices
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/f9513078-f164-4014-ad9f-c94d015e502c) and start prompting.
-
-Changes made via Lovable will be committed automatically to this repo.
-
-**Use your preferred IDE**
-
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
-
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
-
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
+## Technologies
 
 This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+-   **Vite** - Fast build tool and development server
+-   **TypeScript** - Type-safe JavaScript
+-   **React** - Modern UI library
+-   **shadcn-ui** - High-quality component library
+-   **Tailwind CSS** - Utility-first CSS framework
+-   **React Router** - Client-side routing
+-   **Lucide React** - Beautiful icon library
 
-## How can I deploy this project?
+## Getting Started
 
-Simply open [Lovable](https://lovable.dev/projects/f9513078-f164-4014-ad9f-c94d015e502c) and click on Share -> Publish.
+### Prerequisites
 
-## Can I connect a custom domain to my Lovable project?
+-   Node.js (v18 or higher recommended)
+-   npm or yarn package manager
 
-Yes, you can!
+### Installation
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+1. Clone the repository:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```sh
+git clone <YOUR_REPOSITORY_URL>
+cd luxe-saloon
+```
+
+2. Install dependencies:
+
+```sh
+npm install
+```
+
+3. Start the development server:
+
+```sh
+npm run dev
+```
+
+The application will be available at `http://localhost:8080`
+
+### Build for Production
+
+To create a production build:
+
+```sh
+npm run build
+```
+
+The built files will be in the `dist` directory.
+
+### Preview Production Build
+
+To preview the production build locally:
+
+```sh
+npm run preview
+```
+
+## Project Structure
+
+```
+luxe-saloon/
+├── src/
+│   ├── components/        # React components
+│   │   ├── ui/           # shadcn-ui components
+│   │   ├── Contact.tsx   # Contact section
+│   │   ├── Footer.tsx    # Footer component
+│   │   ├── Gallery.tsx   # Gallery section
+│   │   ├── Hero.tsx      # Hero section
+│   │   ├── Navigation.tsx # Navigation bar
+│   │   ├── Services.tsx  # Services section
+│   │   ├── Team.tsx      # Team section
+│   │   └── Testimonials.tsx # Testimonials section
+│   ├── pages/            # Page components
+│   ├── assets/           # Images and static assets
+│   ├── hooks/            # Custom React hooks
+│   ├── lib/              # Utility functions
+│   ├── App.tsx           # Main app component
+│   └── main.tsx          # Application entry point
+├── public/               # Public assets
+└── package.json          # Project dependencies
+```
+
+## Development
+
+### Available Scripts
+
+-   `npm run dev` - Start development server
+-   `npm run build` - Build for production
+-   `npm run build:dev` - Build in development mode
+-   `npm run preview` - Preview production build
+-   `npm run lint` - Run ESLint
+
+### Customization
+
+The site can be easily customized by:
+
+-   Updating service information in `src/components/Services.tsx`
+-   Modifying team members in `src/components/Team.tsx`
+-   Changing contact information in `src/components/Contact.tsx`
+-   Updating colors and styling in `tailwind.config.ts`
+-   Adding new sections in `src/pages/Index.tsx`
+
+## Deployment
+
+This project can be deployed to any static hosting service:
+
+-   **Vercel**: Connect your GitHub repository and deploy automatically
+-   **Netlify**: Drag and drop the `dist` folder or connect via Git
+-   **GitHub Pages**: Use GitHub Actions to build and deploy
+-   **AWS S3 + CloudFront**: Upload `dist` folder to S3 bucket
+
+### Environment Variables
+
+No environment variables are required for basic functionality. If you need to add API endpoints or other configuration, create a `.env` file in the root directory.
+
+## License
+
+This project is private and proprietary.
+
+## Contact
+
+For questions or support, please contact the development team.
